@@ -53,6 +53,7 @@ import {
 } from '@angular/material';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DirectiveModule } from '../directive/directive.module';
+import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
 
 
 @NgModule({
@@ -164,10 +165,12 @@ import { DirectiveModule } from '../directive/directive.module';
     ScrollingModule,
     MatDialogModule,
     DragDropModule,
-    DirectiveModule
+    DirectiveModule,
+    ImageListSelectComponent
   ],
   declarations: [
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    ImageListSelectComponent
   ],
   entryComponents: [
     ConfirmDialogComponent
