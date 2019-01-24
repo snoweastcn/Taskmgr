@@ -8,7 +8,7 @@
 <div class="scroll-container">
   <mat-grid-list [cols]="cols" [rowHeight]="rowHeight">
     <mat-grid-tile *ngFor="let item of items; let i=index">
-      <div class="image-container" (click)="onChange(i)">
+      <div class="image-container" (click)="onChanges(i)">
         <mat-icon class="avatar" [svgIcon]="item" *ngIf="useSvgIcon else imgItem"></mat-icon>
         <ng-template #imgItem>
           <img [src]="item" alt="image item" ngStyle="{'width': itemWidth}">

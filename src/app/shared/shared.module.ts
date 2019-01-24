@@ -54,6 +54,8 @@ import {
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DirectiveModule } from '../directive/directive.module';
 import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
+import { ServiceModule } from '../service/service.module';
+import { AgeInputComponent } from './age-input/age-input.component';
 
 
 @NgModule({
@@ -110,7 +112,8 @@ import { ImageListSelectComponent } from './image-list-select/image-list-select.
     ScrollingModule,
     MatDialogModule,
     DragDropModule,
-    DirectiveModule
+    DirectiveModule,
+    ServiceModule
   ],
   exports: [
     CommonModule,
@@ -166,11 +169,13 @@ import { ImageListSelectComponent } from './image-list-select/image-list-select.
     MatDialogModule,
     DragDropModule,
     DirectiveModule,
+    ServiceModule,
     ImageListSelectComponent
   ],
   declarations: [
     ConfirmDialogComponent,
-    ImageListSelectComponent
+    ImageListSelectComponent,
+    AgeInputComponent
   ],
   entryComponents: [
     ConfirmDialogComponent

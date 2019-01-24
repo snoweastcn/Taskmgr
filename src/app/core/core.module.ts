@@ -8,9 +8,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DomSanitizer } from '@angular/platform-browser';
 import { MatIconRegistry } from '@angular/material';
-import { loadSvgResources } from '../utils/svg.utils';
+import { loadSvgResources } from '../utils/svg.util';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
+import '../utils/debug.util';
 
 @NgModule({
   imports: [
@@ -32,7 +33,11 @@ import 'hammerjs';
     SidebarComponent,
   ],
   providers: [
-    { provide: 'BASE_CONFIG', useValue: 'http://localhost:3000' }
+    {
+      provide: 'BASE_CONFIG', useValue: {
+        uri: 'http://localhost:3000'
+      }
+    }
   ]
 })
 export class CoreModule {
