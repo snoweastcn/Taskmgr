@@ -1,5 +1,6 @@
-import { Observable } from 'rxjs/internal/Observable';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
+import { tap } from 'rxjs/operators';
 
 declare module 'rxjs/internal/Observable' {
   interface Observable<T> {
@@ -8,7 +9,7 @@ declare module 'rxjs/internal/Observable' {
 }
 
 Observable.prototype.debug = function (message: string) {
-  return this.do(
+  return this.pipe(tap(
     (next) => {
       if (!environment.production) {
         console.log(message, next);
@@ -24,5 +25,5 @@ Observable.prototype.debug = function (message: string) {
         console.log('Completed - ');
       }
     }
-  );
+  ));
 };

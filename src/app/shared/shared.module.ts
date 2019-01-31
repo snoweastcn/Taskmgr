@@ -170,7 +170,8 @@ import { AgeInputComponent } from './age-input/age-input.component';
     DragDropModule,
     DirectiveModule,
     ServiceModule,
-    ImageListSelectComponent
+    ImageListSelectComponent,
+    AgeInputComponent
   ],
   declarations: [
     ConfirmDialogComponent,
