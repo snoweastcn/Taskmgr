@@ -54,7 +54,7 @@ import {
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 import { DirectiveModule } from '../directive/directive.module';
 import { ImageListSelectComponent } from './image-list-select/image-list-select.component';
-import { ServiceModule } from '../service/service.module';
+import { ServicesModule } from '../service/service.module';
 import { AgeInputComponent } from './age-input/age-input.component';
 
 
@@ -113,7 +113,7 @@ import { AgeInputComponent } from './age-input/age-input.component';
     MatDialogModule,
     DragDropModule,
     DirectiveModule,
-    ServiceModule
+    ServicesModule
   ],
   exports: [
     CommonModule,
@@ -169,7 +169,7 @@ import { AgeInputComponent } from './age-input/age-input.component';
     MatDialogModule,
     DragDropModule,
     DirectiveModule,
-    ServiceModule,
+    ServicesModule,
     ImageListSelectComponent,
     AgeInputComponent
   ],

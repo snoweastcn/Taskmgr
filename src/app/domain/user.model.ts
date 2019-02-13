@@ -4,4 +4,5 @@ export interface User {
   passsword: string;
   name: string;
   avatar: string;
+  projectIds: string[];
 }
