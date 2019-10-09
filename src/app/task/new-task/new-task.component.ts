@@ -27,7 +27,6 @@ export class NewTaskComponent implements OnInit {
 
   ngOnInit() {
     this.title = this.data.title;
-    console.log(JSON.stringify(this.data.task));
   }
 
   onClick() {

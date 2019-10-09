@@ -1,4 +1,36 @@
 {
+  "users": [
+    {
+      "password": "Ls123456",
+      "name": "李四",
+      "avatar": "",
+      "email": "lisi@163.com",
+      "id": "1",
+      "projectIds": [
+        "1"
+      ]
+    },
+    {
+      "password": "Lm123456",
+      "name": "李明",
+      "avatar": "",
+      "email": "limi@163.com",
+      "id": "2",
+      "projectIds": [
+        "1"
+      ]
+    },
+    {
+      "password": "Zs123456",
+      "name": "张三",
+      "avatar": "",
+      "email": "zhangsan@163.com",
+      "id": "3",
+      "projectIds": [
+        "2"
+      ]
+    }
+  ],
   "projects": [
     {
       "id": "1",
@@ -134,5 +166,6 @@
       "projectId": "1",
       "id": 2
     }
-  ]
+  ],
+  "tasks": []
 }

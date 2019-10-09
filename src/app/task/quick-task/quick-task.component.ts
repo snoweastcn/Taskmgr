@@ -12,7 +12,5 @@ export class QuickTaskComponent implements OnInit {
   ngOnInit() {
   }
   onSubmit({ value, valid }, ev: Event) {
-    console.log(JSON.stringify(value));
-    console.log(JSON.stringify(valid));
   }
 }

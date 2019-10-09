@@ -39,7 +39,6 @@ export class ProjectListComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     if (this.sub) {
-      console.log(1);
       this.sub.unsubscribe();
     }
   }
@@ -54,7 +53,7 @@ export class ProjectListComponent implements OnInit, OnDestroy {
   }
 
   lanchInviteDialog() {
-    this.dialog.open(InviteComponent);
+    const dialogRef = this.dialog.open(InviteComponent, { data: { members: [] } });
   }
 
   launchUpdateDialog(project: Project) {

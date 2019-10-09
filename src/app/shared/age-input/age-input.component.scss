@@ -1,0 +1,8 @@
+.age-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  .age-num {
+    width: 50px;
+  }
+}

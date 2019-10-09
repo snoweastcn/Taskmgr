@@ -2,21 +2,20 @@
 
 @include mat-core();
 
-$my-app-primary: mat-palette($mat-indigo);
-$my-app-accent: mat-palette($mat-pink, A200, A100, A400);
-$my-app-warn: mat-palette($mat-red);
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent: mat-palette($mat-pink, A200, A100, A400);
+$candy-app-warn: mat-palette($mat-red);
 
-$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 
-@include angular-material-theme($my-app-theme);
+@include angular-material-theme($candy-app-theme);
 
+$dark-app-primary: mat-palette($mat-blue-grey);
+$dark-app-accent: mat-palette($mat-amber, A200, A100, A400);
+$dark-app-warn: mat-palette($mat-deep-orange);
 
-$my-dark-primary: mat-palette($mat-blue-grey);
-$my-dark-accent: mat-palette($mat-amber, A200, A100, A400);
-$my-dark-warn: mat-palette($mat-deep-orange);
+$dark-app-theme: mat-dark-theme($dark-app-primary, $dark-app-accent, $dark-app-warn);
 
-$my-dark-theme: mat-dark-theme($my-dark-primary, $my-dark-accent, $my-dark-warn);
-
-.myapp-dark-theme{
-  @include angular-material-theme($my-dark-theme);
+.dark-app-theme {
+  @include angular-material-theme($dark-app-theme);
 }
